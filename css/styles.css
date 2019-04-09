@@ -1,0 +1,13 @@
+.jumbotron {
+  background-color: pink;
+  text-align: center;
+}
+
+.row {
+  padding-bottom: 300px;
+}
+
+#tickets {
+  text-align: center;
+  
+}
