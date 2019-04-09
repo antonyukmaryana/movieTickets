@@ -34,31 +34,36 @@
     <form id = "tickets">
       <label for= "movie"> Movie</label><br>
         <select id="movie">
-          <option value="NaN">Which Movies do you want to watch?</option>
-          <option value="Love From Scratch">Love From Scratch</option>
-          <option value="The Post">The Post</option>
-          <option value="Avengers">Avengers</option>
-          <option value="Amelie Poulain">Amelie Poulain</option>
+          <option value="Which Movies do you want to watch?">Which Movies do you want to watch?</option>
+          <option value ='Love From Scratch' >Love From Scratch</option>
+          <option value ='The Post'>The Post</option>
+          <option value ='Avengers'>Avengers</option>
+          <option value ='Amelie Poulain'>Amelie Poulain</option>
         </select><br>
       <label for= "timeTickets">Screen Time</label><br>
         <select id="timeTickets">
-          <option value="NaN">At what time do you want to come?</option>
-          <option value="8:00">8:00</option>
-          <option value"12:00">12:00</option>
-          <option value"16:00">16:00</option>
-          <option value"19:00">19:00</option>
+          <option name="NaN" value= 0>At what time do you want to come?</option>
+          <option name="8:00" value ='1'>8:00</option>
+          <option name ="12:00" value ='3'>12:00</option>
+          <option name ="16:00"value ='3'>16:00</option>
+          <option name ="19:00" value ='4'>19:00</option>
         </select><br>
       <label for ="age"> Your age range</label><br>
         <select id ="age">
-          <option value="NaN">What is your age range?</option>
-          <option value="1st range"> 2 - 5 years old</option>
-          <option value="2nd range"> 6 - 17 years old</option>
-          <option value="3rd range">  18 - 65 years old</option>
-          <option value="4th range "> 65 and younger :)</option>
+          <option name="NaN" value="0">What is your age range?</option>
+          <option name="1st range" value ='1'> 2 - 5 years old</option>
+          <option name="2nd range"  value ='4'> 6 - 17 years old</option>
+          <option name="3rd range" value ='10'>  18 - 65 years old</option>
+          <option name="4th range " value ='1'> 65 and younger :)</option>
         </select><br><br>
       
       <button class="btn btn-info" type="submit">Add</button>
     </form>
+    <div class="container">
+      <div id="hiddenText">
+        <p><span id="priceOfTickets"></span></p>
+      </div>
+    </div>
     
   </body>
 </html>

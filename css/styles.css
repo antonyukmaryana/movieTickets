@@ -11,3 +11,9 @@
   text-align: center;
   
 }
+
+#hiddenText {
+  padding-top: 250px;
+  display: none;
+  text-align: center;
+}

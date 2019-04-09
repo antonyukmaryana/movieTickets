@@ -6,7 +6,7 @@ $(document).ready(function (){
     var userMovie =$("select#movie").val();
     var userTime = $("select#timeTickets").val();
     var userAge = $("select#age").val();
-   
+    var totalValue = parseInt(userTime) + parseInt(userAge)
 
 
 //back end logic
@@ -18,8 +18,22 @@ function Tickets (name, time, age) {
 }
 
 var newUser = new Tickets (userMovie, userTime, userAge);
+var price = "";
 
-console.log(newUser)
 
+var getThePrice = function(total){
+  if (total < 6){
+   price = "$5";
+ }else if (total < 8){
+    price = "$10";
+    }else{
+    price = "$20";
+    }
+  return price
+}
+
+
+$("#priceOfTickets").text(getThePrice(totalValue));
+$("#hiddenText").show();
 });
 });
