@@ -4,7 +4,7 @@
 }
 
 .row {
-  padding-bottom: 300px;
+  padding-bottom: 100px;
 }
 
 #tickets {
@@ -16,4 +16,31 @@
   padding-top: 250px;
   display: none;
   text-align: center;
+}
+
+img {
+  margin-top: 100px;
+}
+
+.boxmodel-2 {
+  font-size: 90px;
+  text-align: center;
+  background-color: pink;
+  font-family: Times,inherit;
+  margin-top: 100px;
+}
+.boxmodel-2 a {
+  font-size: 40px;
+  font-family: Times,inherit;
+  color: black;
+}
+.boxmodel-2 a:hover{
+  color: violet ;
+  text-decoration: underline;
+}
+
+#link {
+  color: violet ;
+  text-decoration: underline;
+  margin-left: 30px;
 }

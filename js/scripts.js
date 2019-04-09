@@ -20,6 +20,8 @@ function Tickets (name, time, age) {
 var newUser = new Tickets (userMovie, userTime, userAge);
 var price = "";
 
+var thanks= "Thanks for your booking. Below, you'll receive your confirmation details by email.";
+
 
 var getThePrice = function(total){
   if (total < 6){
@@ -32,8 +34,10 @@ var getThePrice = function(total){
   return price
 }
 
+var resultPrice= getThePrice(totalValue);
+var result = "The movie you have choosen is : " + userMovie + ". The price is:  " + resultPrice;
 
-$("#priceOfTickets").text(getThePrice(totalValue));
+$("#priceOfTickets").text(result);
 $("#hiddenText").show();
 });
 });
