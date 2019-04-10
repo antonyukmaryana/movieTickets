@@ -9,11 +9,12 @@
 
 #tickets {
   text-align: center;
+  text-decoration-color: #6f42c1;
   
 }
 
 #hiddenText {
-  padding-top: 250px;
+  padding-top: 8px;
   display: none;
   text-align: center;
 }
@@ -43,4 +44,8 @@ img {
   color: violet ;
   text-decoration: underline;
   margin-left: 30px;
+}
+label{
+  color: violet;
+  font-family: Times, inherit;
 }

@@ -1,86 +1,91 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+<head>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
-  
+
     <title>Movie Tickets</title>
-  </head>
-  
-  <body>
-    <div class="jumbotron">
-      <div class="container">
+</head>
+
+<body>
+<div class="jumbotron">
+    <div class="container">
         <h1> Seattle SMAM Cinemas</h1>
-      </div>
     </div>
-    <div class="container">
-      <div class="row">
+</div>
+<div id="firstPage" class="container">
+    <div class="row">
         <div class="col-md-3">
-          <p><img src="img/amelie.jpeg" height= "300px"></p>
-          <a href= "https://www.imdb.com/title/tt0211915/" id="link">Amelie Poulain</a>
+            <p><img src="img/amelie.jpeg" height="300px"></p>
+            <a href="https://www.imdb.com/title/tt0211915/" id="link">Amelie Poulain</a>
         </div>
         <div class="col-md-3">
-          <p><img src="img/avengers.jpeg" height= "300px"></p>
-          <a href="https://www.imdb.com/title/tt4154796/?ref_=nv_sr_1?ref_=nv_sr_1" id="link">Avengers:Endgame</a>
+            <p><img src="img/avengers.jpeg" height="300px"></p>
+            <a href="https://www.imdb.com/title/tt4154796/?ref_=nv_sr_1?ref_=nv_sr_1" id="link">Avengers:Endgame</a>
         </div>
         <div class="col-md-3">
-          <p><img src="img/thePost.jpeg" height= "300px"></p>
-          <a href="https://www.imdb.com/title/tt6294822/?ref_=nv_sr_2?ref_=nv_sr_2" id="link">The Post</a>
-        </div> 
-        <div class="col-md-3">
-          <p><img src="img/illusionist.jpeg" height= "300px"></p>
-          <a href="https://www.imdb.com/title/tt0443543/?ref_=nv_sr_1?ref_=nv_sr_1" id="link">Illusionist</a>
-        
+            <p><img src="img/thePost.jpeg" height="300px"></p>
+            <a href="https://www.imdb.com/title/tt6294822/?ref_=nv_sr_2?ref_=nv_sr_2" id="link">The Post</a>
         </div>
-      </div>
+        <div class="col-md-3">
+            <p><img src="img/illusionist.jpeg" height="300px"></p>
+            <a href="https://www.imdb.com/title/tt0443543/?ref_=nv_sr_1?ref_=nv_sr_1" id="link">Illusionist</a>
+
+        </div>
     </div>
-    <form id = "tickets">
-      <label for= "movie"> Movie</label><br>
+    <form id="tickets">
+        <label for="movie"> Movie</label><br>
         <select id="movie">
-          <option value="Which Movies do you want to watch?">Which Movies do you want to watch?</option>
-          <option value ='The Illusionist<
-          ' >The Illusionist</option>
-          <option value ='The Post'>The Post</option>
-          <option value ='Avengers'>Avengers</option>
-          <option value ='Amelie Poulain'>Amelie Poulain</option>
-        </select><br>
-      <label for= "timeTickets">Screen Time</label><br>
-        <select id="timeTickets">
-          <option name="NaN" value= 0>At what time do you want to come?</option>
-          <option name="8:00" value ='1'>8:00</option>
-          <option name ="12:00" value ='3'>12:00</option>
-          <option name ="16:00"value ='3'>16:00</option>
-          <option name ="19:00" value ='4'>19:00</option>
-        </select><br>
-      <label for ="age"> Your age range</label><br>
-        <select id ="age">
-          <option name="NaN" value="0">What is your age range?</option>
-          <option name="1st range" value ='1'> 2 - 5 years old</option>
-          <option name="2nd range"  value ='4'> 6 - 17 years old</option>
-          <option name="3rd range" value ='10'>  18 - 65 years old</option>
-          <option name="4th range " value ='1'> 65 and younger :)</option>
+            <option value="Which Movies do you want to watch?">Which Movies do you want to watch?</option>
+            <option value='The Illusionist<
+          '>The Illusionist
+            </option>
+            <option value='The Post'>The Post</option>
+            <option value='Avengers'>Avengers</option>
+            <option value='Amelie Poulain'>Amelie Poulain</option>
         </select><br><br>
-      <label for= "email">Enter your address email to receive your confirmation : </label>
-      <input type="email"><br><br>
-      <button class="btn btn-info" type="submit">Add</button>
+        <label for="timeTickets">Screen Time</label><br>
+        <select id="timeTickets">
+            <option name="NaN" value=0>At what time do you want to come?</option>
+            <option name="8:00" value='1'>8:00</option>
+            <option name="12:00" value='3'>12:00</option>
+            <option name="16:00" value='3'>16:00</option>
+            <option name="19:00" value='4'>19:00</option>
+        </select><br><br>
+        <label for="age"> Your age range</label><br>
+        <select id="age">
+            <option name="NaN" value="0">What is your age range?</option>
+            <option name="1st range" value='1'> 2 - 5 years old</option>
+            <option name="2nd range" value='4'> 6 - 17 years old</option>
+            <option name="3rd range" value='10'> 18 - 65 years old</option>
+            <option name="4th range " value='1'> 65 and younger :)</option>
+        </select><br><br>
+        <label for="email">Enter your address email to receive your confirmation : </label>
+        <input id="email" type="email">
+        <button class="btn btn-info" type="submit">Add</button>
     </form>
-    <div class="container">
-      <div id="hiddenText">
+
+    <div id="hiddenText">
         <p><span id="priceOfTickets"></span></p>
-      </div>
+        <button id="buyTickets" class="btn btn-info">Buy tickets</button>
     </div>
     <div class="boxmodel-2">
-      <div class="container">
-        <div clas="row">
-          <div class="col-md-12">
-          
-          <p><a href="#help.html"> Help</a><p>
-          </div>
+        <div class="container">
+            <div clas="row">
+                <div class="col-md-12">
+
+                    <p><a href="#help.html"> Help</a>
+                    <p>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-    
-  </body>
+</div>
+<div id="thankYouPage" class="container" style="display: none">
+    <h1>Thank you!</h1>
+</div>
+
+</body>
 </html>
